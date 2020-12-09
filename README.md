@@ -20,7 +20,21 @@ int is_con(int **v_arr, int *is_c_arr, int cur_v, int v_count){
 
 ```
 
+- Удаление ребра графа
 
+``` C
+ for(int i = 0; i < v_count; ++i){
+
+        for(int j = i; j < v_count; ++j){
+
+            int sup = v_arr[i][j];
+            while(sup > 0){
+                fprintf(file2, "%d -- %d;\n", i + 1, j + 1);
+                sup--;
+            }
+        }
+    }
+```
 
 ## Структурная схема алгоритма
 
