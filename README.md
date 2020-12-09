@@ -24,7 +24,7 @@ int is_con(int **v_arr, int *is_c_arr, int cur_v, int v_count){
 
 ## Структурная схема алгоритма
 
-![Alt-текст](https://github.com/KirillKhus/dz4-3sem/blob/main/diagram.jpg)
+![Alt-текст](https://github.com/KirillKhus/dz4-3sem/blob/main/diagram_dz.jpg)
 
 ## Результат работы
 
