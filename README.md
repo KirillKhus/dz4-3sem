@@ -26,6 +26,10 @@ int is_con(int **v_arr, int *is_c_arr, int cur_v, int v_count){
 
 ![Alt-текст](https://github.com/KirillKhus/dz4-3sem/blob/main/diagram.jpg)
 
+## Результат работы
+
+![Alt-текст](https://github.com/KirillKhus/dz4-3sem/blob/main/consol.jpg)
+
 ## Исходный граф
 
 ![Alt-текст](https://github.com/KirillKhus/dz4-3sem/blob/main/graph1.png)
