@@ -48,18 +48,13 @@ int compare(const void *a, const void *b){
 ----------------------------------------
 
  int degree_ed_arr[v_count][2];
-
     for (int i = 0; i < v_count; ++i){
-
         degree_ed_arr[i][1] = i;
     }
-
+    
     for(int i = 0; i < v_count; ++i){
-
         degree_ed_arr[i][0] = 0;
-
         for(int j = 0; j < v_count; ++j){
-
             degree_ed_arr[i][0] += v_arr[i][j];
         }
     }
