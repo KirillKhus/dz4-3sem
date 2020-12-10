@@ -20,20 +20,21 @@ int is_con(int **v_arr, int *is_c_arr, int cur_v, int v_count){
 
 ```
 
-- Удаление ребра графа
+- Считывание введеного ребра графа и его удаление
 
 ``` C
- for(int i = 0; i < v_count; ++i){
-
-        for(int j = i; j < v_count; ++j){
-
-            int sup = v_arr[i][j];
-            while(sup > 0){
-                fprintf(file2, "%d -- %d;\n", i + 1, j + 1);
-                sup--;
-            }
-        }
+    int v1 = 0, v2 = 0;
+    printf("Enter the edge you want to delete:");
+    scanf("%d%d", &v1, &v2);
+    v1--;
+    v2--;
+    if (v_arr[v1][v2] == 0 || v_arr[v2][v1] == 0){
+        printf("There is no specified edge in the graph\n");
+        return 1;
     }
+    
+    v_arr[v1][v2]--;
+    v_arr[v2][v1]--;
 ```
 
 - Создание массива для сортировки и быстрая сортировка вершин по возрастанию степени вершин
